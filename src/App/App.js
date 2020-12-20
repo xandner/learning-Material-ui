@@ -1,4 +1,4 @@
-import logo from '../logo.svg';
+
 import './App.css';
 import SideMenu from "../Component/SideMenu";
 import {createMuiTheme, CssBaseline, makeStyles, MuiThemeProvider} from "@material-ui/core";
@@ -6,6 +6,7 @@ import Header from "../Component/Header";
 import PageHeader from "../Component/PageHeader";
 import AccessibleIcon from '@material-ui/icons/Accessible';
 import { ThemeProvider } from "@material-ui/styles";
+import Employees from "../Pages/Employees/Employees";
 
 const useStyle = makeStyles({
     appMain: {
@@ -54,14 +55,10 @@ function App() {
             <div className={classes.appMain}>
                 <Header/>
 
-                <PageHeader
-                    title={'page header'}
-                    subTitle={'page desc'}
-                    icon={<AccessibleIcon fontSize={'large'}/>}
 
-                />
-
+                <Employees/>
             </div>
+
             <CssBaseline/>
         </ThemeProvider>
 
